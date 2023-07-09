@@ -3,6 +3,7 @@ import Button from '../Button/Button';
 import TextInput from '../TextInput/TextInput';
 import styles from './SearchForm.module.scss';
 import { useDispatch, useSelector } from 'react-redux';
+import { updatedSearchedCardPhrase } from '../../redux/store';
 
 const SearchForm = () => {
     const initialSeatchedCardPhrase = useSelector(state => state.searchedCardPhrase);
@@ -13,7 +14,7 @@ const SearchForm = () => {
 
     const updateSearchedCardPhrase = (e) => {
         e.preventDefault();
-        dispatch({ type: 'UPDATE_CARD_SEARCHED_PHRASE', payload: searchedCardPhrase })
+        dispatch(updatedSearchedCardPhrase(searchedCardPhrase));
     }
 
     return (
