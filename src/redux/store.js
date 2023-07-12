@@ -39,6 +39,7 @@ const reducer = (state, action) => {
       }
     }
     case 'UPDATE_SEARCHED_CARD_PHRASE': {
+      console.warn('action.payload', action.payload);
       return {
         ...state,
         searchedCardPhrase: action.payload
