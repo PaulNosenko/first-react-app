@@ -12,7 +12,12 @@
     font-weight: bold;
 }
 
-.favorite {
+.cardIcons {
+    display: flex;
+    gap: 5px;
+}
+
+.cardIcon {
     cursor: pointer;
     color: $color-warning;
 }
