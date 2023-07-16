@@ -3,7 +3,7 @@ import Button from '../Button/Button';
 import TextInput from '../TextInput/TextInput';
 import styles from './SearchForm.module.scss';
 import { useDispatch, useSelector } from 'react-redux';
-import { updatedSearchedCardPhrase } from '../../redux/store';
+import { updatedSearchedCardPhrase } from '../../redux/searchStringReducer';
 
 const SearchForm = () => {
     const initialSeatchedCardPhrase = useSelector(state => state.searchedCardPhrase);

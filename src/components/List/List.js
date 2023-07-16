@@ -1,4 +1,3 @@
-import { getColumnsByList, getListById } from '../../redux/store';
 import Column from '../Column/Column';
 import ColumnForm from '../ColumnForm/ColumnForm';
 import styles from './List.module.scss';
@@ -6,6 +5,7 @@ import { useSelector } from 'react-redux';
 import { useParams } from 'react-router';
 import SearchForm from '../SearchForm/SearchForm';
 import { Navigate } from "react-router-dom";
+import { getColumnsByList, getListById } from '../../redux/listsRedux';
 
 const List = () => {
     const { listId } = useParams();
